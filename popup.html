@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src='script.js'></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body {
+            width: 21.875rem;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        h1 {
+            font-size: 1rem;
+            font-weight: normal;
+            padding-bottom: 0.1rem;
+        }
+        a {
+            text-decoration: none;
+            outline: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 5rem;
+            width: 33.3333333333%;
+            padding: 1rem 0;
+        }
+        #blueprint {
+            background: #2a6cac;
+            position: relative;
+        }
+        #blueprint span {
+            color: #fff;
+            outline: #fff solid 1px;
+        }
+        
+        #night {
+            background: #242b2e;
+            position: relative;
+        }
+        #night span {
+            color: rgb(160, 160, 160);
+            outline: rgb(160, 160, 160) solid 1px;
+        }
+
+        #light {
+            background: #f8f8f8;
+            position: relative;
+        }
+        #light span {
+            color: #242b2e;
+            outline: #242b2e solid 1px;
+        }
+
+        .copy {
+            font-size: 0.5rem;
+            display: block;
+            text-align: center;
+            width: 100%;
+        }
+        .copy a {
+            font-size: 0.5rem;
+            display: inline-block;
+            padding: 1rem 1rem 1rem 0;
+            height: auto;
+            width: auto;
+
+        }
+
+        .support {
+            width: 100%;
+        }
+
+        #reset {
+            position: absolute;
+            top:0.5rem;
+            right: 1rem;
+            display: block;
+            padding: 0;
+            height: 1rem;
+            width: 1rem;
+            transition: all ease-in-out 300ms;
+        }
+
+        #reset:hover {
+            transform: rotate(360deg);
+        }
+
+    </style>
+</head>
+
+<body>
+    <a href="#" id='blueprint'><span>Blueprint</span></a>
+    <a href="#" id='night'><span>Night</span></a>
+    <a href="#" id='light'><span>Light</span></a>
+    <div class="support">
+        <style>
+            .bmc-button img {
+                width: 27px !important;
+                margin-bottom: 1px !important;
+                box-shadow: none !important;
+                border: none !important;
+                vertical-align: middle !important;
+            }
+        
+            .bmc-button {
+                line-height: 36px !important;
+                width: 100%;
+                height: 37px !important;
+                text-decoration: none !important;
+                display: inline-flex !important;
+                color: #000000 !important;
+                background-color: #FFFFFF !important;
+                border-radius: 3px !important;
+                border: 1px solid transparent !important;
+                padding: 0px 9px !important;
+                font-size: 1rem !important;
+                margin: 0 auto !important;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                -webkit-box-sizing: border-box !important;
+                box-sizing: border-box !important;
+                -o-transition: 0.3s all linear !important;
+                -webkit-transition: 0.3s all linear !important;
+                -moz-transition: 0.3s all linear !important;
+                -ms-transition: 0.3s all linear !important;
+                transition: 0.3s all linear !important;
+            }
+        
+            .bmc-button:hover,
+            .bmc-button:active,
+            .bmc-button:focus {
+                text-decoration: none !important;
+                opacity: 0.85 !important;
+                color: #000000 !important;
+            }
+        </style>
+        <a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/0ePvbA4pZ">
+            <img src="https://www.buymeacoffee.com/assets/img/BMC-btn-logo.svg" alt="buy me a hot chocolate">
+            <span style="margin-left:5px">buy me a hot chocolate</span>
+        </a>
+    </div>
+
+    <a href="#" id="reset"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+   <g>
+       <g>
+           <path d="M482.195,226.196C482.195,101.471,380.725,0,256.001,0S29.805,101.471,29.805,226.196c0,7.409,6.007,13.416,13.416,13.416
+               s13.416-6.008,13.416-13.416c0-109.93,89.434-199.363,199.363-199.363s199.363,89.434,199.363,199.363
+               c0,109.928-89.434,199.362-199.363,199.362h-23.276l33.282-37.255c4.937-5.525,4.458-14.007-1.067-18.944
+               c-5.525-4.937-14.008-4.457-18.944,1.068l-47.576,53.255c-7.788,8.718-7.788,21.866,0,30.584l47.576,53.255
+               c2.651,2.968,6.322,4.478,10.01,4.478c3.181,0,6.375-1.126,8.934-3.41c5.526-4.937,6.004-13.419,1.067-18.944l-33.282-37.255
+               h23.276C380.725,452.39,482.195,350.919,482.195,226.196z"/>
+       </g>
+   </g>
+   
+   </svg>
+   </a>
+    
+</body>
+
+</html>
