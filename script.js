@@ -1,32 +1,10 @@
-// function blueprint(){
-    
-// }
-
-window.onload = function () {
-
-    document.getElementById("blueprint").onclick = function () { 
-        chrome.tabs.insertCSS({ file: "smooth.css" });   
-        chrome.tabs.insertCSS({ file: "blueprint.css" });
-     };
-    
-    document.getElementById("night").onclick = function () { 
-        chrome.tabs.insertCSS({ file: "smooth.css" });
-        chrome.tabs.insertCSS({ file: "night.css" });
-        
-     };
-    
-    document.getElementById("light").onclick = function () { 
-        chrome.tabs.insertCSS({ file: "smooth.css" });
-        chrome.tabs.insertCSS({ file: "light.css" });
-     };
-
-     document.getElementById('reset').onclick = function() {
-         chrome.tabs.insertCSS({ file: "reset.css" });
-     }
-    
+window.onload = () => {
+    const styles = ['blueprint', 'night', 'light', 'reset'];
+    styles.forEach((style) => {
+        console.log(style);
+        document.getElementById(style).onclick = () => {
+            chrome.tabs.insertCSS({ file: 'smooth.css' });
+            chrome.tabs.insertCSS({ file: `${style}.css` });
+        }
+    });
 };
-
-
-// chrome.browserAction.onClicked.addListener(function (tab) {
-//     chrome.tabs.insertCSS({ file: "blueprint.css" });
-// });
